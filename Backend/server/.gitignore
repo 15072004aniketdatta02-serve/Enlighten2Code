@@ -56,3 +56,4 @@ Desktop.ini
 lib/
 .eslintcache
 debug.log
+/src/generated/prisma
