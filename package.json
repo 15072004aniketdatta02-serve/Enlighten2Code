@@ -1,0 +1,17 @@
+{
+    "name": "enlighten2code-root",
+    "version": "1.0.0",
+    "description": "Root configuration for Enlighten2Code",
+    "scripts": {
+        "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+        "dev:server": "cd server && npm run dev",
+        "dev:client": "cd client && npm run dev",
+        "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "concurrently": "^8.2.0"
+    }
+}
