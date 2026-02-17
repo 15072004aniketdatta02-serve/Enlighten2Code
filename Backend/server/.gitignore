@@ -1,0 +1,58 @@
+# Node.js dependencies
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env*
+.env.*.local
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+.next/cache/
+coverage/
+tmp/
+temp/
+.cache/
+
+# Static files (runtime uploads)
+uploads/
+public/static/
+public/uploads/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# System files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# Test outputs, coverage
+.nyc_output/
+
+# Vercel/Next.js build
+.vercel/
+
+# Miscellaneous
+*.tgz
+*.swp
+*.bak
+*.tmp
+lib/
+.eslintcache
+debug.log
