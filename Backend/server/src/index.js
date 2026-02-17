@@ -4,8 +4,8 @@ import cookieParser from "cookie-parser";
 import helmet from 'helmet'
 import cors from "cors";
 import router from "../routes/healthcheck.routes.js";
-const app = express();
 dotenv.config();
+const app = express();
 const PORT = process.env.PORT || 5000;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
