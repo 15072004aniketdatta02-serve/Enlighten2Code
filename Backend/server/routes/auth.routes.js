@@ -1,17 +1,12 @@
 import express from "express";
+import { register, login, logout, getCurrentUser } from "../controllers/auth.controllers.js";
+import { verifyJWT } from "../middlewares/auth.middlewares.js";
+
 const authRoute = express.Router();
 
-import { register } from "../controllers/auth.controllers.js";
-authRoute.post("/register", register);
-// authRoute.post("/login", login);
-// authRoute.post("/refresh-token", refreshToken);
-// authRoute.post("/logout", logout);
-// authRoute.post("/google", google);
-// authRoute.post("/github", github);
-// authRoute.post("/linkedin", linkedin);
-// authRoute.post("/forgot-password", forgotPassword);
-// authRoute.post("/reset-password", resetPassword);
-// authRoute.post("/verify-email", verifyEmail);
-// authRoute.post("/send-verification-email", sendVerificationEmail);
-// authRoute.get("/check", check);
+authRoute.route("/register").post(register);
+authRoute.route("/login").post(login);
+authRoute.route("/logout").post(logout);
+authRoute.route("/me").get(verifyJWT, getCurrentUser);
+
 export default authRoute;
