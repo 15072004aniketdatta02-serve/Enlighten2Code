@@ -1,6 +1,6 @@
-import { ApiError } from "../errors/APIErrors.js";
+import { ApiError } from "../Errors/APIErrors.js";
 import { APIResponse }from "../APIStatuses/APIResponse.js";
-import { asyncHandler } from "../AsyncHandler/asyncHandler.js";
+import { asyncHandler } from "../AsyncHandler/AsyncHandler.js";
 
 const healthCheck = asyncHandler(async (req, res) => {
 try {

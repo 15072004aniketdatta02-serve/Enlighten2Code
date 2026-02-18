@@ -4,6 +4,7 @@ import cookieParser from "cookie-parser";
 import helmet from 'helmet'
 import cors from "cors";
 import router from "../routes/healthcheck.routes.js";
+import authRoute from "../routes/auth.routes.js";
 dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -19,6 +20,7 @@ app.use(
 );
 app.use(cors({ origin: `http://localhost:${PORT}`, credentials: true }));
 app.use("/api/v1/healthcheck", router);
+app.use("/api/v1/auth", authRoute);
 
 app.get('/', (req, res) => {
   res.send('Enlighten2Code Server is running!');
