@@ -16,7 +16,7 @@ export const register = asyncHandler(async (req, res) => {
 
     const existingUser = await db.user.findUnique({ where: { email } });
     if (existingUser) {
-        throw new ApiError(409, "User with this email already exists");
+        throw new ApiError(409, "User  already exists");
     }
 
     const hashedPassword = await bcrypt.hash(password, 10);
