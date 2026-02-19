@@ -83,6 +83,8 @@ Cloudflare Hyperdrive provides connection pooling for Workers. Use `node-postgre
 
 See the [Cloudflare Hyperdrive guide](https://neon.com/docs/guides/cloudflare-hyperdrive.md) for connecting with Cloudflare Workers and Hyperdrive.
 
+Also consider Placement Hints to ensure your Workers are deployed as close as possible to your Neon database - read the [Placement Configuration docs](https://developers.cloudflare.com/workers/configuration/placement/) for details.
+
 **No pooling support (Netlify, Deno Deploy)** → Use `@neondatabase/serverless`
 
 Fall back to the decision in step 5 based on transaction requirements.

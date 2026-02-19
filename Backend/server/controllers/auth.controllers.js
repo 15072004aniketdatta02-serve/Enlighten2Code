@@ -1,6 +1,6 @@
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
-import { db } from "../database/dbconfig.js";
+import  { db }  from "../database/dbconfig.js";
 import { APIResponse } from "../APIStatuses/APIResponse.js";
 import { ApiError } from "../Errors/APIErrors.js";
 import { asyncHandler } from "../AsyncHandler/AsyncHandler.js";

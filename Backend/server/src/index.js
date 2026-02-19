@@ -18,7 +18,7 @@ app.use("/api/v1/healthcheck", router);
 app.use("/api/v1/auth", authRoute);
 
 app.get('/', (req, res) => {
-  res.send('Enlighten2Code Server is running!');
+  res.send('Enlighten2Code Server is running❤️!');
 });
 
 // Global error-handling middleware (must be after all routes)
