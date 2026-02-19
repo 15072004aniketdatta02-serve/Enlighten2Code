@@ -1,5 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
+import fs from "fs";
 import cookieParser from "cookie-parser";
 import helmet from 'helmet'
 import cors from "cors";
@@ -8,6 +9,10 @@ import authRoute from "../routes/auth.routes.js";
 import { db } from "../database/dbconfig.js";
 import { ApiError } from "../Errors/APIErrors.js";
 dotenv.config();
+
+// Ensure temp upload directory exists (Multer writes here before Cloudinary upload)
+fs.mkdirSync("./tmp/uploads", { recursive: true });
+
 const app = express();
 const PORT = process.env.PORT || 5000;
 app.use(express.json());
