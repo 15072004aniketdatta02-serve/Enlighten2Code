@@ -240,3 +240,5 @@
 {"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T21:45:03.537Z"}
 {"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T21:45:21.886Z"}
 {"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T21:45:21.891Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T21:52:31.971Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T21:52:31.987Z"}
