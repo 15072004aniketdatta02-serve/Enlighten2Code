@@ -22,3 +22,155 @@
 {"level":"\u001b[32minfo\u001b[39m","message":"::1 - - [24/Feb/2026:14:35:24 +0000] \"GET /docs HTTP/1.1\" 404 143 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36\"","timestamp":"2026-02-24T14:35:24.649Z"}
 {"level":"\u001b[32minfo\u001b[39m","message":"::1 - - [24/Feb/2026:14:35:29 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36\"","timestamp":"2026-02-24T14:35:29.483Z"}
 {"level":"\u001b[32minfo\u001b[39m","message":"::1 - - [24/Feb/2026:14:35:37 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36\"","timestamp":"2026-02-24T14:35:37.114Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T14:40:30.156Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T14:40:30.169Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T14:47:42.882Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T14:47:42.891Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T14:47:47.088Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T14:47:47.092Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T14:47:53.881Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T14:47:53.886Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T14:48:14.970Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T14:48:14.974Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T14:48:31.823Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T14:48:31.829Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"::1 - - [24/Feb/2026:14:48:54 +0000] \"GET /api/v1/healthcheck HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36\"","timestamp":"2026-02-24T14:48:54.219Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"::1 - - [24/Feb/2026:14:49:05 +0000] \"GET /api/v1/problems HTTP/1.1\" 200 12 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36\"","timestamp":"2026-02-24T14:49:05.071Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T14:49:27.763Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T14:49:27.767Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T14:49:36.578Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T14:49:36.588Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T14:49:40.634Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T14:49:40.639Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T14:49:41.699Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T14:49:41.704Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T14:49:44.097Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T14:49:44.103Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T14:49:45.225Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T14:49:45.229Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T14:50:01.758Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T14:50:01.763Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T14:50:05.305Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T14:50:05.311Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T14:50:22.412Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T14:50:22.416Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T14:50:24.910Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T14:50:24.915Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T14:53:52.864Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T14:53:52.871Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T14:53:57.097Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T14:53:57.101Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:05:07.868Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:05:07.882Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:13:38.426Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:13:38.440Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:13:41.873Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:13:41.877Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:13:47.859Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:13:47.864Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:13:52.835Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:13:52.840Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:13:57.483Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:13:57.488Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:14:01.754Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:14:01.760Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:14:09.712Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:14:09.719Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:16:25.912Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:16:25.917Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:16:27.398Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:16:27.403Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:16:52.808Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:16:52.813Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:17:02.523Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:17:02.528Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:18:17.209Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:18:17.215Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:18:47.197Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:18:47.202Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:19:25.120Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:19:25.125Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:21:09.772Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:21:09.781Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:21:10.731Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:21:10.736Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:21:18.049Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:21:18.053Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:21:24.195Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:21:24.200Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:21:29.513Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:21:29.519Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:21:32.332Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:21:32.339Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:21:36.944Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:21:36.949Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:21:44.493Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:21:44.498Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:25:57.645Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:25:57.666Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:25:59.863Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:25:59.868Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:26:28.348Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:26:28.355Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:26:30.059Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:26:30.065Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:26:32.277Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:26:32.282Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:27:00.874Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:27:00.880Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:27:02.537Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:27:02.542Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:27:03.789Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:27:03.793Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:27:36.558Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:27:36.578Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:27:37.929Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:27:37.934Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:27:43.004Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:27:43.009Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:27:44.409Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:27:44.414Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:28:09.538Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:28:09.544Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:28:12.317Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:28:12.322Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:28:42.572Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:28:42.578Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:29:14.381Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:29:14.388Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:29:18.257Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:29:18.262Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:29:22.684Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:29:22.689Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:29:37.149Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:29:37.155Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:29:39.685Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:29:39.690Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:30:02.221Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:30:02.227Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:31:38.722Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:31:38.731Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:32:22.529Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:32:22.535Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:32:25.623Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:32:25.629Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:32:27.197Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:32:27.203Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:32:32.507Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:32:32.513Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:32:51.460Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:32:51.465Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:34:23.808Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:34:23.813Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:34:24.699Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:34:24.704Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:34:27.504Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:34:27.510Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:34:30.718Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:34:30.723Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:34:31.885Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:34:31.891Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:34:33.786Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:34:33.792Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-02-24T15:34:48.995Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-02-24T15:34:49.000Z"}

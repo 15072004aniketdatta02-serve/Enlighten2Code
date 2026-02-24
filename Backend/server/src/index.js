@@ -9,8 +9,10 @@ import logger from "../loggers/logger.js";
 import { morganStream } from "../loggers/logger.js";
 import router from "../routes/healthcheck.routes.js";
 import authRoute from "../routes/auth.routes.js";
+
 import { db } from "../database/dbconfig.js";
 import { ApiError } from "../Errors/APIErrors.js";
+import problemRoutes from "../routes/problem.routes.js";
 dotenv.config();
 
 // Ensure temp upload directory exists (Multer writes here before Cloudinary upload)
@@ -26,7 +28,7 @@ app.use(cookieParser());
 app.use(cors({ origin: `http://localhost:${PORT}`, credentials: true }));
 app.use("/api/v1/healthcheck", router);
 app.use("/api/v1/auth", authRoute);
-
+app.use("/api/v1/problems",problemRoutes);
 app.get('/', (req, res) => {
   res.send('Enlighten2Code Server is running❤️!');
 });
