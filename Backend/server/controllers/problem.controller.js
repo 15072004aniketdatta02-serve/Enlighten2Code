@@ -22,21 +22,21 @@ export const createProblem = async (req, res) => {
 
   // Defense-in-depth: re-verify admin role at the controller level
   if (!req.user || req.user.role !== "ADMIN") {
-    return res.status(403).json({ error: "Access denied — Admins only" });
+    return res.status(403).json({ error: "You are not allowed to create a problem" });
   }
 
   try {
     //loop through each reference solution for different languages
     for (const [language, solutionCode] of Object.entries(referenceSolutions)) {
       const languageId = getJudge0LanguageId(language);
-
+     // check if the language is supported
       if (!languageId) {
         return res
           .status(400)
           .json({ error: `Language ${language} is not supported` });
       }
 
-      //
+      // create submissions for each testcase
       const submissions = testcases.map(({ input, output }) => ({
         source_code: solutionCode,
         language_id: languageId,
@@ -44,10 +44,12 @@ export const createProblem = async (req, res) => {
         expected_output: output,
       }));
 
+      // submit the batch of submissions to judge0
       const submissionResults = await submitBatch(submissions);
-
+     // get the tokens from the submission results
       const tokens = submissionResults.map((res) => res.token);
 
+      // poll the results from judge0
       const results = await pollBatchResults(tokens);
 
       for (let i = 0; i < results.length; i++) {
