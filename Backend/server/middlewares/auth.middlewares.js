@@ -2,6 +2,7 @@ import jwt from "jsonwebtoken";
 import { db } from "../database/dbconfig.js";
 import { ApiError } from "../Errors/APIErrors.js";
 import { asyncHandler } from "../AsyncHandler/AsyncHandler.js";
+import logger from "../loggers/logger.js";
 
 export const verifyJWT = asyncHandler(async (req, res, next) => {
     const token = req.cookies?.token;
@@ -71,7 +72,7 @@ export const authMiddleware = async (req , res , next)=>{
         next();
 
     } catch (error) {
-        console.error("Error authenticating user:", error);
+        logger.error("Error authenticating user:", error);
         res.status(500).json({message:"Error authenticating user"});
     }
 }
@@ -98,7 +99,7 @@ export const checkAdmin  = async(req , res , next)=>{
 
         next();
     } catch (error) {
-        console.error("Error checking admin role:", error);
+        logger.error("Error checking admin role:", error);
         res.status(500).json({message:"Error checking admin role"});
     }
 }

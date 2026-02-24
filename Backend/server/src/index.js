@@ -4,6 +4,9 @@ import fs from "fs";
 import cookieParser from "cookie-parser";
 import helmet from 'helmet'
 import cors from "cors";
+import morgan from "morgan";
+import logger from "../loggers/logger.js";
+import { morganStream } from "../loggers/logger.js";
 import router from "../routes/healthcheck.routes.js";
 import authRoute from "../routes/auth.routes.js";
 import { db } from "../database/dbconfig.js";
@@ -15,6 +18,7 @@ fs.mkdirSync("./tmp/uploads", { recursive: true });
 
 const app = express();
 const PORT = process.env.PORT || 5000;
+app.use(morgan("combined", { stream: morganStream }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
@@ -36,7 +40,7 @@ app.use((err, req, res, next) => {
       errors: err.errors,
     });
   }
-  console.error("Unhandled error:", err);
+  logger.error("Unhandled error:", err);
   return res.status(500).json({
     success: false,
     statusCode: 500,
@@ -50,15 +54,15 @@ db.$connect()
     const dbUrl = process.env.DATABASE_URL || "No DATABASE_URL set";
     // Mask credentials in the URL for safe logging
     const safeUrl = dbUrl.replace(/:\/\/([^:]+):([^@]+)@/, "://*****:*****@");
-    console.log(`✅ DB connected successfully using: ${safeUrl}`);
+    logger.info(`✅ DB connected successfully using: ${safeUrl}`);
 
     app.listen(PORT, () => {
-      console.log(`🚀 Server is running on port ${PORT}`);
+      logger.info(`🚀 Server is running on port ${PORT}`);
     });
   })
   .catch((error) => {
-    console.error("❌ Failed to connect to the database:");
-    console.error(`   Error: ${error.message}`);
-    if (error.code) console.error(`   Code:  ${error.code}`);
+    logger.error("❌ Failed to connect to the database:");
+    logger.error(`   Error: ${error.message}`);
+    if (error.code) logger.error(`   Code:  ${error.code}`);
     process.exit(1);
   });
