@@ -44,20 +44,23 @@ export const createProblem = async (req, res) => {
         expected_output: output,
       }));
 
-      // submit the batch of submissions to judge0
-      const submissionResults = await submitBatch(submissions);
-     // get the tokens from the submission results
-      const tokens = submissionResults.map((res) => res.token);
+      // submit in chunks of 20 to avoid Judge0 batch limits
+      const BATCH_SIZE = 20;
+      const allResults = [];
 
-      // poll the results from judge0
-      const results = await pollBatchResults(tokens);
+      for (let start = 0; start < submissions.length; start += BATCH_SIZE) {
+        const chunk = submissions.slice(start, start + BATCH_SIZE);
 
-      for (let i = 0; i < results.length; i++) {
-        const result = results[i];
+        const submissionResults = await submitBatch(chunk);
+        const tokens = submissionResults.map((r) => r.token);
+        const results = await pollBatchResults(tokens);
+
+        allResults.push(...results);
+      }
+
+      for (let i = 0; i < allResults.length; i++) {
+        const result = allResults[i];
         logger.info("Result-----", result);
-        // console.log(
-        //   `Testcase ${i + 1} and Language ${language} ----- result ${JSON.stringify(result.status.description)}`
-        // );
         if (result.status.id !== 3) {
           return res.status(400).json({
             error: `Testcase ${i + 1} failed for language ${language}`,
