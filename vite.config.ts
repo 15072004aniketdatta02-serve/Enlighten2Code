@@ -1,6 +1,6 @@
-import vinext from "vinext";
+import express from "express";
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  plugins: [vinext()],
+  plugins: [express()],
 });
