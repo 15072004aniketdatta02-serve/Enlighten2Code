@@ -452,3 +452,11 @@
 {"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server listening on port 5000","timestamp":"2026-03-07T15:59:25.747Z"}
 {"level":"\u001b[32minfo\u001b[39m","message":"⚡ Socket.io ready","timestamp":"2026-03-07T15:59:25.748Z"}
 {"level":"\u001b[32minfo\u001b[39m","message":"🔗 gRPC server listening on port 50051","timestamp":"2026-03-07T15:59:25.842Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-03-07T16:03:06.634Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"⚠️  Redis unavailable (Connection is closed.) — cache & rate-limiting disabled","timestamp":"2026-03-07T16:03:06.660Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"⚡ Socket.io initialised","timestamp":"2026-03-07T16:03:06.665Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"⚠️  Kafka unavailable (Connection error: ) — event streaming disabled","timestamp":"2026-03-07T16:03:08.952Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"⚠️  BullMQ skipped — Redis not available (direct execution only)","timestamp":"2026-03-07T16:03:08.954Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server listening on port 5000","timestamp":"2026-03-07T16:03:08.975Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"⚡ Socket.io ready","timestamp":"2026-03-07T16:03:08.977Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🔗 gRPC server listening on port 50051","timestamp":"2026-03-07T16:03:08.980Z"}
