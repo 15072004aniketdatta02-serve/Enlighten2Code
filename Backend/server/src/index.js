@@ -13,6 +13,8 @@ import authRoute from "../routes/auth.routes.js";
 import { db } from "../database/dbconfig.js";
 import { ApiError } from "../Errors/APIErrors.js";
 import problemRoutes from "../routes/problem.routes.js";
+import submissionRoutes from "../routes/submission.routes.js";
+import executionRoute from "../routes/executeCode.routes.js";
 dotenv.config();
 
 // Ensure temp upload directory exists (Multer writes here before Cloudinary upload)
@@ -29,6 +31,8 @@ app.use(cors({ origin: `http://localhost:${PORT}`, credentials: true }));
 app.use("/api/v1/healthcheck", router);
 app.use("/api/v1/auth", authRoute);
 app.use("/api/v1/problems",problemRoutes);
+app.use("/api/v1/submissions",submissionRoutes);
+app.use("/api/v1/execute",executionRoute);
 app.get('/', (req, res) => {
   res.send('Enlighten2Code Server is running❤️!');
 });
