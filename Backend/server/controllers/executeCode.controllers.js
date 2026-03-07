@@ -4,6 +4,9 @@ import {
   pollBatchResults,
   submitBatch,
 } from "../libs/judge0.lib.js";
+import { enqueueExecution, isQueueReady } from "../libs/bullmq.lib.js";
+import { produceEvent, KAFKA_TOPICS } from "../libs/kafka.lib.js";
+import logger from "../loggers/logger.js";
 
 export const executeCode = async (req, res) => {
   try {
@@ -13,7 +16,6 @@ export const executeCode = async (req, res) => {
     const userId = req.user.id;
 
     // Validate test cases
-
     if (
       !Array.isArray(stdin) ||
       stdin.length === 0 ||
@@ -23,25 +25,30 @@ export const executeCode = async (req, res) => {
       return res.status(400).json({ error: "Invalid or Missing test cases" });
     }
 
-    // 2. Prepare each test cases for judge0 batch submission
+    /* ─── BullMQ path (async) ─────────────────────────────── */
+    if (isQueueReady()) {
+      const job = await enqueueExecution({
+        source_code, language_id, stdin, expected_outputs, problemId, userId,
+      });
+      return res.status(202).json({
+        success: true,
+        message: "Execution queued — listen for execution:result via Socket.io",
+        jobId: job.jobId,
+      });
+    }
+
+    /* ─── Direct path (fallback when Redis / BullMQ offline) ── */
+
     const submissions = stdin.map((input) => ({
       source_code,
       language_id,
       stdin: input,
     }));
 
-    // 3. Send batch of submissions to judge0
     const submitResponse = await submitBatch(submissions);
-
-    const tokens = submitResponse.map((res) => res.token);
-
-    // 4. Poll judge0 for results of all submitted test cases
+    const tokens = submitResponse.map((r) => r.token);
     const results = await pollBatchResults(tokens);
 
-    console.log("Result-------------");
-    console.log(results);
-
-    //  Analyze test case results
     let allPassed = true;
     const detailedResults = results.map((result, i) => {
       const stdout = result.stdout?.trim();
@@ -61,16 +68,7 @@ export const executeCode = async (req, res) => {
         memory: result.memory ? `${result.memory} KB` : undefined,
         time: result.time ? `${result.time} s` : undefined,
       };
-
-      // console.log(`Testcase #${i+1}`);
-      // console.log(`Input for testcase #${i+1}: ${stdin[i]}`)
-      // console.log(`Expected Output for testcase #${i+1}: ${expected_output}`)
-      // console.log(`Actual output for testcase #${i+1}: ${stdout}`)
-
-      // console.log(`Matched testcase #${i+1}: ${passed}`)
     });
-
-    console.log(detailedResults);
 
     // store submission summary
     const submission = await db.submission.create({
@@ -97,23 +95,13 @@ export const executeCode = async (req, res) => {
       },
     });
 
-    // If All passed = true mark problem as solved for the current user
     if (allPassed) {
       await db.problemSolved.upsert({
-        where: {
-          userId_problemId: {
-            userId,
-            problemId,
-          },
-        },
+        where: { userId_problemId: { userId, problemId } },
         update: {},
-        create: {
-          userId,
-          problemId,
-        },
+        create: { userId, problemId },
       });
     }
-    // 8. Save individual test case results  using detailedResult
 
     const testCaseResults = detailedResults.map((result) => ({
       submissionId: submission.id,
@@ -128,26 +116,34 @@ export const executeCode = async (req, res) => {
       time: result.time,
     }));
 
-    await db.testCaseResult.createMany({
-      data: testCaseResults,
-    });
+    await db.testCaseResult.createMany({ data: testCaseResults });
 
     const submissionWithTestCase = await db.submission.findUnique({
-      where: {
-        id: submission.id,
-      },
-      include: {
-        testCases: true,
-      },
+      where: { id: submission.id },
+      include: { testCases: true },
     });
-    //
+
+    /* ── Kafka events (fire-and-forget) ─────────────────────── */
+    const evtType = allPassed ? "submission.accepted" : "submission.failed";
+    produceEvent(KAFKA_TOPICS.SUBMISSION_EVENTS, userId, {
+      type: evtType, userId, problemId,
+      submissionId: submission.id,
+      language: getLanguageName(language_id),
+      timestamp: new Date().toISOString(),
+    }).catch(() => {});
+
+    produceEvent(KAFKA_TOPICS.ANALYTICS_EVENTS, userId, {
+      type: "submission.created", userId,
+      data: { language: getLanguageName(language_id), status: allPassed ? "Accepted" : "Wrong Answer", problemId },
+    }).catch(() => {});
+
     res.status(200).json({
       success: true,
-      message: "Code Executed! Successfully!",
+      message: "Code Executed Successfully!",
       submission: submissionWithTestCase,
     });
   } catch (error) {
-    console.error("Error executing code:", error.message);
+    logger.error("Error executing code:", error.message);
     res.status(500).json({ error: "Failed to execute code" });
   }
 };

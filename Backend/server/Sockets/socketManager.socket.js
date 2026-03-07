@@ -1,14 +1,15 @@
 import { Server } from "socket.io";
+import { createAdapter } from "@socket.io/redis-adapter";
 import { socketAuth } from "./socketAuthentication.socket.js";
 import { registerEventHandlers } from "./socketEventHandlers.socket.js";
+import { getRedis, isRedisConnected } from "../libs/redis.lib.js";
 import logger from "../loggers/logger.js";
 
 let io;
 
 /**
  * Initialize Socket.io on the given HTTP server.
- * @param {import("http").Server} httpServer
- * @returns {import("socket.io").Server} io instance
+ * Attaches Redis adapter for horizontal scaling when Redis is available.
  */
 export const initializeSocket = (httpServer) => {
   io = new Server(httpServer, {
@@ -21,26 +22,32 @@ export const initializeSocket = (httpServer) => {
     pingInterval: 25000,
   });
 
-  // Apply JWT authentication middleware
+  // Redis adapter (horizontal scaling)
+  if (isRedisConnected()) {
+    try {
+      const redis = getRedis();
+      if (redis.status !== "noop") {
+        const pub = redis.duplicate();
+        const sub = redis.duplicate();
+        io.adapter(createAdapter(pub, sub));
+        logger.info("⚡ Socket.io Redis adapter enabled");
+      }
+    } catch (e) {
+      logger.warn("Socket.io Redis adapter failed — single-instance:", e.message);
+    }
+  }
+
   io.use(socketAuth);
+  io.on("connection", (socket) => registerEventHandlers(io, socket));
 
-  // Handle new connections
-  io.on("connection", (socket) => {
-    registerEventHandlers(io, socket);
-  });
-
-  logger.info("⚡ Socket.io initialized successfully");
-
+  logger.info("⚡ Socket.io initialised");
   return io;
 };
 
 /**
  * Get the current Socket.io instance.
- * @returns {import("socket.io").Server}
  */
 export const getIO = () => {
-  if (!io) {
-    throw new Error("Socket.io has not been initialized. Call initializeSocket first.");
-  }
+  if (!io) throw new Error("Socket.io not initialised");
   return io;
 };
