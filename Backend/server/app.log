@@ -403,3 +403,7 @@
 {"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-03-07T14:33:40.992Z"}
 {"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-03-07T14:33:40.996Z"}
 {"level":"\u001b[32minfo\u001b[39m","message":"⚡ Socket.io is ready for connections","timestamp":"2026-03-07T14:33:40.997Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"⚡ Socket.io initialized successfully","timestamp":"2026-03-07T15:12:14.212Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected successfully using: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-03-07T15:12:14.321Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server is running on port 5000","timestamp":"2026-03-07T15:12:14.327Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"⚡ Socket.io is ready for connections","timestamp":"2026-03-07T15:12:14.327Z"}
