@@ -468,3 +468,31 @@
 {"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server listening on port 5000","timestamp":"2026-03-12T19:01:20.625Z"}
 {"level":"\u001b[32minfo\u001b[39m","message":"⚡ Socket.io ready","timestamp":"2026-03-12T19:01:20.626Z"}
 {"level":"\u001b[32minfo\u001b[39m","message":"🔗 gRPC server listening on port 50051","timestamp":"2026-03-12T19:01:20.630Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"SIGINT received — shutting down…","timestamp":"2026-03-12T19:01:54.159Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-03-12T19:01:58.043Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"⚠️  Redis unavailable (Connection is closed.) — cache & rate-limiting disabled","timestamp":"2026-03-12T19:01:58.059Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"⚡ Socket.io initialised","timestamp":"2026-03-12T19:01:58.062Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"⚠️  Kafka unavailable (Connection error: ) — event streaming disabled","timestamp":"2026-03-12T19:02:00.535Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"⚠️  BullMQ skipped — Redis not available (direct execution only)","timestamp":"2026-03-12T19:02:00.537Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server listening on port 5000","timestamp":"2026-03-12T19:02:00.560Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"⚡ Socket.io ready","timestamp":"2026-03-12T19:02:00.561Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🔗 gRPC server listening on port 50051","timestamp":"2026-03-12T19:02:00.564Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"SIGINT received — shutting down…","timestamp":"2026-03-12T19:02:27.389Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-03-12T19:02:32.862Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"⚠️  Redis unavailable (Connection is closed.) — cache & rate-limiting disabled","timestamp":"2026-03-12T19:02:32.879Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"⚡ Socket.io initialised","timestamp":"2026-03-12T19:02:32.881Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"⚠️  Kafka unavailable (Connection error: ) — event streaming disabled","timestamp":"2026-03-12T19:02:34.603Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"⚠️  BullMQ skipped — Redis not available (direct execution only)","timestamp":"2026-03-12T19:02:34.604Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server listening on port 5000","timestamp":"2026-03-12T19:02:34.624Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"⚡ Socket.io ready","timestamp":"2026-03-12T19:02:34.625Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🔗 gRPC server listening on port 50051","timestamp":"2026-03-12T19:02:34.628Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"SIGINT received — shutting down…","timestamp":"2026-03-12T19:02:37.028Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ DB connected: postgresql://*****:*****@ep-twilight-breeze-aiosnsg0-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require","timestamp":"2026-03-12T19:02:43.103Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"⚠️  Redis unavailable (Connection is closed.) — cache & rate-limiting disabled","timestamp":"2026-03-12T19:02:43.124Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"⚡ Socket.io initialised","timestamp":"2026-03-12T19:02:43.127Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"⚠️  Kafka unavailable (Connection error: ) — event streaming disabled","timestamp":"2026-03-12T19:02:44.720Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"⚠️  BullMQ skipped — Redis not available (direct execution only)","timestamp":"2026-03-12T19:02:44.721Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🚀 Server listening on port 5000","timestamp":"2026-03-12T19:02:44.742Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"⚡ Socket.io ready","timestamp":"2026-03-12T19:02:44.742Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"🔗 gRPC server listening on port 50051","timestamp":"2026-03-12T19:02:44.747Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"SIGINT received — shutting down…","timestamp":"2026-03-12T19:02:49.295Z"}
