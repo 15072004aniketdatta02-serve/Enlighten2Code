@@ -122,9 +122,13 @@ const startServer = async () => {
     await connectKafka();
 
     // 5. Kafka consumers (only if Kafka connected)
-    await startSubmissionConsumer();
-    await startAnalyticsConsumer();
-    await startNotificationConsumer();
+    try {
+      await startSubmissionConsumer();
+      await startAnalyticsConsumer();
+      await startNotificationConsumer();
+    } catch (e) {
+      logger.warn(`⚠️  Kafka consumers failed to start: ${e.message}`);
+    }
 
     // 6. BullMQ (only if Redis connected)
     initQueues();
@@ -138,8 +142,8 @@ const startServer = async () => {
       logger.info(`⚡ Socket.io ready`);
     });
   } catch (error) {
-    logger.error("❌ Startup failed:", error.message);
-    if (error.code) logger.error(`   Code: ${error.code}`);
+    logger.error(`❌ Startup failed: ${error.stack || error}`);
+    console.error("❌ Startup failed:", error.stack || error);
     process.exit(1);
   }
 };

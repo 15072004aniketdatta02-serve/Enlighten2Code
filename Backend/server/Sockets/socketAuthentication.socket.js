@@ -1,6 +1,7 @@
 import jwt from "jsonwebtoken";
 import { db } from "../database/dbconfig.js";
 import logger from "../loggers/logger.js";
+import { getRedis } from "../libs/redis.lib.js";
 
 /**
  * Socket.io JWT authentication middleware.
@@ -9,6 +10,7 @@ import logger from "../loggers/logger.js";
  */
 export const socketAuth = async (socket, next) => {
   try {
+    const redis = getRedis();
     // Try to get token from cookie or auth header
     let token = null;
 
@@ -43,7 +45,7 @@ export const socketAuth = async (socket, next) => {
     if (!user) {
       return next(new Error("Authentication error: User not found"));
     }
-
+    console.log("Socket authenticated:", user.name);
     socket.user = user;
     next();
   } catch (error) {

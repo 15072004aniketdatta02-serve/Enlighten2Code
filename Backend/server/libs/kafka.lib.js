@@ -80,6 +80,12 @@ export const createConsumer = async (groupId, topic, handler) => {
   if (!kafka || !_ready) return null;
   try {
     const c = kafka.consumer({ groupId });
+    
+    // Prevent Kafkajs from crashing the entire process out-of-band
+    c.on(c.events.CRASH, (e) => {
+      logger.warn(`⚠️  Kafka consumer '${groupId}' crashed: ${e.payload?.error?.message || 'Unknown'}`);
+    });
+
     await Promise.race([
       c.connect(),
       new Promise((_, rej) => setTimeout(() => rej(new Error("Consumer connect timed out")), 5000)),

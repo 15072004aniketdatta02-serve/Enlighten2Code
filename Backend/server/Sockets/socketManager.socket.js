@@ -27,8 +27,12 @@ export const initializeSocket = (httpServer) => {
     try {
       const redis = getRedis();
       if (redis.status !== "noop") {
-        const pub = redis.duplicate();
-        const sub = redis.duplicate();
+        const pub = redis.duplicate({ enableOfflineQueue: true });
+        const sub = redis.duplicate({ enableOfflineQueue: true });
+        
+        pub.on("error", (err) => logger.warn("Socket.io Redis pub error:", err.message));
+        sub.on("error", (err) => logger.warn("Socket.io Redis sub error:", err.message));
+
         io.adapter(createAdapter(pub, sub));
         logger.info("⚡ Socket.io Redis adapter enabled");
       }

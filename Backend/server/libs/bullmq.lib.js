@@ -28,7 +28,19 @@ export const initQueues = () => {
     return;
   }
 
-  const connection = getRedis();
+  const sharedRedis = getRedis();
+
+  // BullMQ Workers use blocking commands (BRPOPLPUSH) which require
+  // maxRetriesPerRequest: null.  Create a dedicated connection by
+  // duplicating the shared client and overriding the blocking options.
+  const connection = sharedRedis.duplicate({
+    maxRetriesPerRequest: null,
+    enableOfflineQueue:   true,
+  });
+
+  connection.on("error", (err) =>
+    logger.error(`BullMQ Redis error: ${err.message}`)
+  );
 
   // ── Queue ──────────────────────────────────────────────────
   executionQueue = new Queue(QUEUE_NAME, {
