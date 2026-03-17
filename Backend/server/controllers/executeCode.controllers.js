@@ -24,8 +24,13 @@ export const executeCode = async (req, res) => {
     ) {
       return res.status(400).json({ error: "Invalid or Missing test cases" });
     }
-
-    /* ─── BullMQ path (async) ─────────────────────────────── */
+  /*------Prepare Test Cases for Batch Submission Judge0--------------------- */
+  // const submissions = stdin.map((input) => ({
+  //     source_code,
+  //     language_id,
+  //     stdin: input,
+  //   }));
+  /* ─── BullMQ path (async) ─────────────────────────────── */
     if (isQueueReady()) {
       const job = await enqueueExecution({
         source_code, language_id, stdin, expected_outputs, problemId, userId,
@@ -48,7 +53,8 @@ export const executeCode = async (req, res) => {
     const submitResponse = await submitBatch(submissions);
     const tokens = submitResponse.map((r) => r.token);
     const results = await pollBatchResults(tokens);
-
+    console.log("Results:", results);
+    
     let allPassed = true;
     const detailedResults = results.map((result, i) => {
       const stdout = result.stdout?.trim();

@@ -98,7 +98,8 @@ app.use((err, req, res, _next) => {
       message: err.message, errors: err.errors,
     });
   }
-  logger.error("Unhandled error:", err);
+  logger.error(`Unhandled error: ${err.message}`);
+  console.error("Unhandled error:", err.stack || err);
   return res.status(500).json({ success: false, statusCode: 500, message: "Internal Server Error" });
 });
 
